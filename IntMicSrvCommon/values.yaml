@@ -25,9 +25,9 @@ queueManagerEnabled: false
 image:
   repository:
     # name of the ace only server image
-    aceonly: ibmcom/ace
+    aceonly: "ibmcom/ace"
     # name of the ace with mq server image
-    acemq: ibmcom/ace-mq
+    acemq: "ibmcom/ace-mq"
   # tag is the tag to use for the container repository
   tag: 11.0.0.2
   # pullPolicy of IfNotPresent causes image pulling to be skipped if it already exists. Change to Always to force a pull.
