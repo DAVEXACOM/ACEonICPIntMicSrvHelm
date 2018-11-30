@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: ibm-ace-server-dev
+name: IntMicSrvCommon
 version: 1.0.0
 description: This helm chart is used by the IBM App Connect Dashboard to deploy servers
 keywords:
