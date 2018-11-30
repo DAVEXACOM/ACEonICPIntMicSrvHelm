@@ -64,7 +64,11 @@ spec:
         fsGroup: {{ default 1001 .Values.fsGroupGid }}
       containers:
         - name: {{ $deploymentName }}
+          {{- if .Values..image.repository.aceonly }}
           image: "{{ .Values.image.repository.aceonly }}:{{ .Values.image.tag }}"
+          {{- else }}
+          image: "{{ .Values.default.image.repository.aceonly }}:{{ .Values.default.image.tag }}"
+          {{- end }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
           - containerPort: {{ .Values.service.webuiPort }}
