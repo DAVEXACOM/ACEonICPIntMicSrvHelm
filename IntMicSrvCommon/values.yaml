@@ -26,10 +26,11 @@ image:
   repository:
     # name of the ace only server image
     aceonly: "ibmcom/ace"
+    aceonly: "mycluster.icp:8500/default/ace11002mqc91intms2"
     # name of the ace with mq server image
     acemq: "ibmcom/ace-mq"
   # tag is the tag to use for the container repository
-  tag: 11.0.0.2
+  tag: latest
   # pullPolicy of IfNotPresent causes image pulling to be skipped if it already exists. Change to Always to force a pull.
   pullPolicy: IfNotPresent
   # pullSecret is the secret to use when pulling the image from a private registry
