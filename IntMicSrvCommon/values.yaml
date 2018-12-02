@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # license must be set to "accept" in order to accept the terms of the IBM license
-license: "not accepted"
+license: "accepted"
 
 # The URL to pull content from before initialising the Integration Server
 # Of the form https://releasename/path/to/dir?token
@@ -21,16 +21,6 @@ contentServerURL:
 
 # Whether to start an image with an MQ Queue Manager.  The Queue Manager will be used by the Integration Server
 queueManagerEnabled: false
-
-default:
-  image:
-    repository:
-      # name of the ace only server image
-      aceonly: "ibmcom/ace"
-      # name of the ace with mq server image
-      acemq: "ibmcom/ace-mq"
-    # tag is the tag to use for the container repository
-    tag: 11.0.0.2
 
 image:
   repository:
