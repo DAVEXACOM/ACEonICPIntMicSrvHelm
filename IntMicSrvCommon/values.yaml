@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # license must be set to "accept" in order to accept the terms of the IBM license
-license: "accepted"
+license: "accept"
 
 # The URL to pull content from before initialising the Integration Server
 # Of the form https://releasename/path/to/dir?token
